@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const path = require("path");
 
 function createWindow() {
     let win = new BrowserWindow({
@@ -8,7 +9,8 @@ function createWindow() {
         minWidth: 800,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        icon: path.join(__dirname, "assets", "icon.png"),
     });
 
     win.loadFile("index.html");

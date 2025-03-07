@@ -5,6 +5,9 @@
   "scripts": {
     "start": "electron ."
   },
+  "build": {
+    "asar": true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
